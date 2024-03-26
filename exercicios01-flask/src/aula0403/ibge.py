@@ -57,7 +57,8 @@ def frequencia_maxima(nome):
 def ordena(nome):
     dados = busca(nome)
     lista = get_res(dados)
-    return selection_sort(lista)
+    #return selection_sort(lista)
+    return bubble_sort(lista)
     
 
 def selection_sort(L):
@@ -69,7 +70,14 @@ def selection_sort(L):
         L[i], L[menor] = L[menor], L[i]
     return L
 
-
+def bubble_sort(L):
+    j = len(L) - 1
+    while j > 0:
+        for i in range(0, j):
+            if L[i]["frequencia"] > L[i+1]['frequencia']:
+                L[i], L[i+1] = L[i+1],L[i]
+        j = j-1
+    return L
 #-----------------------JULIA---------------------------#
 
 """ def min_frequencia(var_json):
