@@ -5,6 +5,7 @@ def busca(nome):
     return resposta.json()
 
 def get_res(obj):
+    print(obj[0])
     if len(obj) > 0:
         conteudo = obj[0]
         return conteudo.get("res", [])
