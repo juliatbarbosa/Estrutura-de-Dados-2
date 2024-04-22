@@ -16,21 +16,21 @@ def busca_cidades():
             bubble = bubble_sort(lista)
             fim = time()
             tempo = fim - inicio
-            return jsonify({"lista_ordenada": bubble, "tempo_de_execucao": tempo})
+            return jsonify({"lista_ordenada": bubble['lista'], "numero_comparacoes": bubble['contador'], "tempo_de_execucao": tempo})
         
         elif sort == 'merge':
             inicio = time()
             merge = merge_sort(0, len(lista), lista)
             fim = time()
             tempo = fim - inicio
-            return jsonify({"lista_ordenada": merge, "tempo_de_execucao": tempo})
+            return jsonify({"lista_ordenada": merge['lista'], "numero_comparacoes": merge['contador'], "tempo_de_execucao": tempo})
         
         elif sort == 'quick':
             inicio = time()
             quick = quick_sort(lista)
             fim = time()
             tempo = fim - inicio
-            return jsonify({"lista_ordenada": quick, "tempo_de_execucao": tempo})
+            return jsonify({"lista_ordenada": quick['lista'], "numero_comparacoes": quick['contador'], "tempo_de_execucao": tempo})
         
         else:
             return jsonify({'message': 'Metodo de ordenacao nao encontrado!'})
