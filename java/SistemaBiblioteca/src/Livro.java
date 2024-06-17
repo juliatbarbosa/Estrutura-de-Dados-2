@@ -5,13 +5,13 @@ public class Livro {
     private int ano_publicacao;
     private static int contador = 0;
 
-    public Livro(String titulo, String autor, int ano_publicacao) {
+    public Livro(String titulo) {
         this.setTitulo(titulo);
         this.setAutor(autor);
         this.setAno_publicacao(ano_publicacao);
         
-        contador += 1;
-        this.setId(contador);
+        //contador += 1;
+        //this.setId(contador);
     }
 
     public String getTitulo() {
