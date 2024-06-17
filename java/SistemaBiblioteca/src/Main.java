@@ -2,9 +2,9 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        Livro obj1 = new Livro("Calculo 1", "Matemática 1", "10/01/2005");
-        Livro obj2 = new Livro("Estrutura de dados", "Matemática 2", "24/08/2008");
-        Livro obj3 = new Livro("Banco de dados", "Matemática 3", "15/03/2010");
+        Livro obj1 = new Livro("Calculo 1", "Matemática 1", 2005);
+        Livro obj2 = new Livro("Estrutura de dados", "Matemática 2", 2008);
+        Livro obj3 = new Livro("Banco de dados", "Matemática 3", 2010);
 
         Usuario user1 = new Usuario("Julia Teixeira Barbosa", "julia@email.com");
         Usuario user2 = new Usuario("Rafael Peres Ferreira", "rafael@email.com");
